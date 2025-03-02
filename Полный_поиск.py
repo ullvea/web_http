@@ -14,6 +14,7 @@ geocoder_params = {
     "apikey": "f86828c6-788e-41e3-bdfe-9f45d8f7ca92",
     "geocode": toponym_to_find,
     "format": "json"}
+
 response = requests.get(geocoder_api_server, params=geocoder_params)
 if not response:
     pass
